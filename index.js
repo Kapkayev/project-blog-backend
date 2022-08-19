@@ -8,7 +8,7 @@ import { handleValidationErrors, checkAuth } from './utils/index.js';
 
 mongoose
     .connect('mongodb+srv://admin:fyebc1999@cluster0.uoyg1sp.mongodb.net/blog?retryWrites=true&w=majority',
-    { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
+    { useNewUrlParser: true, useUnifiedTopology: true })
     .then( () => console.log('DB connected'))
     .catch( (err) => console.log('DB not connected', err) )
 
